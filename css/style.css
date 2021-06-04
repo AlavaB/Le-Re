@@ -2,55 +2,49 @@ body {
   margin: 0;
 }
 .part-body {
-  background-color: #fefefe;
+  background-image: url('../images/mur.jpg');
+  background-size: contain;
 }
-
-
-/*Navigation*/
-.nav-wrapper {
-  width: 100%;
-  z-index: 99;
-  position: fixed;
+section {
+  margin: 50px 0;
 }
-.navbar { 
-  background-color: #fefefe;
-  height: 100px;
-  justify-content: space-evenly;
-}
-.navbar-brand {
-  color:  #bc3f29 !important; 
-  margin-left: 250px;
-}
-.brand-name {
-  font-size: 2em;
-}
-li { 
+.header-logo {
+  padding: 50px 0;
   text-align: center;
 }
-.nav-item {
-  padding: 15px 15px;
-}
-.nav-link {
-  font-size: 1.1em;
-  color:  #bc3f29 !important;
-  background-color: #fefefe;
-}
-
-/*Welcome logo*/
+/*Presentation*/
 .page-header {
   display: flex;
-  padding-top: 150px;
-  text-align: center;
-  align-items: center;
 }
 .logo {
-  width: 50%;
+  width: 100px;
 }
 .header-function {
   font-size: 1.65em;
 }
 .welcome-picture {
   text-align: center;
+}
+.picture {
+  border-radius: 5px;
+}
+
+/*Aside*/
+.icons {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.icons-part {
+  height: 150px;
+  text-align: center;
+  background-color: #a4433c;
+  border-radius: 5px;
+}
+.icon-text {
+  padding: 10px 0;
+  margin: 0;
 }
 
 /*Main*/
