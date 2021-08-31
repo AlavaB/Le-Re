@@ -1,102 +1,178 @@
-body {
-  margin: 0;
-}
-.part-body {
-  background-image: url('../images/mur.jpg');
-  background-size: contain;
-}
-section {
-  margin: 50px 0;
-}
-.header-logo {
-  padding: 50px 0;
-  text-align: center;
-}
-/*Presentation*/
-.page-header {
-  display: flex;
-}
-.logo {
-  width: 100px;
-}
-.header-function {
-  font-size: 1.65em;
-}
-.welcome-picture {
-  text-align: center;
-}
-.picture {
-  border-radius: 5px;
+@font-face {
+    font-family: 'alegreyaregular';
+    src: url('../font/alegreya-regular-webfont.woff2') format('woff2'),
+         url('../font/alegreya-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-/*Aside*/
+body, html {
+  margin: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+.full-part {
+  font-family: 'alegreyaregular', Arial, Helvetica, sans-serif;
+  background-color: #b12830;
+}
+
+/***Header***/
+nav {
+  height: 7.8rem;
+  background-color: #fff2e6;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+}
+.logo-item {
+  width: 120px;
+  height: 120px;
+}
+.nav-link {
+  font-size: 1.6em;
+  color: black;
+}
+
+.outside-image {
+  width: 100%;
+  height: 48rem;
+  z-index: 0;
+  overflow: hidden;
+}
+.outside-image img {
+  width: 110%;
+  height: 100%;
+  object-fit: cover;
+  transform: rotateZ(-5deg) translateY(-4rem) translateX(-4rem);
+}
+.inside-image {
+  width: 50%;
+  z-index: 0;
+  overflow: hidden;
+  margin-bottom: 5rem;
+}
+.inside-image img {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+  
+}
+
+.presentation {
+  text-align: center;
+  max-width: 45rem;
+  width: 90%;
+  margin: auto;
+  margin-top: -15rem;
+  position: relative;
+  background-color: #fff2e6;
+  border-radius: 14px;
+  padding: 1rem;
+  box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.25);
+}
+.presentation h2 {
+  font-size: 2rem;
+  margin-top: 0;
+}
+.presentation p {
+  font-size: 1.2em;
+}
+.color {
+  color: #b12830;
+}
+
+.menus {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card {
+  width: auto;
+  margin-top: 180px;
+  background-color: #fff2e6 !important;
+  border-radius: 14px !important;
+}
+.card-img-top {
+  width: 20rem !important;
+  object-fit: cover;
+  margin: 20px 20px;
+  border-radius: 14px !important;
+  box-shadow: 0 1px 10px 5px rgba(0, 0, 0, 0.25);
+}
+.card-body {
+  text-align: center;
+  
+  width: 25rem;
+}
+
+
+.team {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card-team {
+  margin-top: 0 !important;
+  width: 45rem !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+}
+.card-team img {
+  width: 15rem !important;
+}
 .icons {
-  padding: 30px 0;
+  margin: 50px 0;
+  height: 15rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-.icons-part {
-  height: 150px;
-  text-align: center;
-  background-color: #a4433c;
-  border-radius: 5px;
+.icon {
+  width: 170px;
+  height: 170px;
+  border: 5px solid #fff2e6;
+  border-radius: 50%;
 }
-.icon-text {
-  padding: 10px 0;
-  margin: 0;
+.icon-item {
+  margin-top: 1.7rem;
+  margin-left: 2rem;
 }
 
-/*Main*/
-.title-section {
-  margin-top: 80px;
-  font-size: 2.5em;
-  text-align: center;
+.gallery {
+  width: 110rem;
+  align-items: center;  
 }
-.section-layout {
-  width: auto;
-  height: 80%;
-  margin: 80px 0;
-  text-align: center;
+.gallery img {
+  border: 25px solid #fff2e6;
+  border-radius: 14px;
 }
 
 
 
-/*Food*/
-.food {
-  
-}
-.food-description {
-  width: 50%;
-  text-align: center;
-}
-.food-picture {
-  width: 50%;
-  border-radius: 5px;
-}
-.food-picture:hover {
-  transform: scale(1.3);
-  transition-duration: 1s;
-}
-
-.team-picture {
-  width: 50%;
-}
-
-/*Footer*/
-footer {
-  padding-top: 20px;
-  display: flex;
-  text-align: center;
-  background-color: #fefefe;
-  color:  #2f221d;
-}
-.footer-title {
-  margin-bottom: 10px;
-}
-.official-text {
-  margin: 5px auto;
-}
 
 
 
+
+.main-picture {
+  height: 100%;
+  background: url('../images/exterieur_nord.png') no-repeat;
+  background-position: center;
+  background-size: auto;
+  opacity: 0.9;
+}
+
+/**********/
+.main-part {
+  height: 750px;
+}
+.main-title {
+  margin: 40px 180px;
+
+}
+.text-content {
+  height: auto;
+  background-color: aqua;
+}

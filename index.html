@@ -13,188 +13,213 @@
 </head>
 
 <body>
-  <div class="part-body">
-
-    <header class="container">
-      <div class="header-logo">
-        <img src="./images/logo.png" alt="Le Re - logo">
+  <div class="full-part">
+    <nav class="navbar navbar-expand">
+      <a class="navbar-brand" href="index.html">
+        <img class="logo-item" src="./images/logo.png" alt="Restaurant Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav items">
+          <li class="nav-item active">
+            <a class="nav-link" href="#menus">Nos Menus<span
+                class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#team">Notre Equipe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Notre contact</a>
+          </li>
+        </ul>
       </div>
-    </header>
+    </nav>
 
-    <section class="container-fluid">
-      <div class="row page-header">
-        <div class="col-lg-3 welcome-picture">
-          <img class="picture" src="./images/barrique.png" alt="Le Re - barrel picture">
+
+    
+
+    <div class="row">
+      <div class="outside-image">
+        <img src="./images/exterieur_nord.png" alt="Restaurant terrace">
+      </div>
+    </div>
+     
+
+    <section class="presentation">
+      <img src="./images/logo.png" width="160" height="160" alt="Site Logo">
+      <h1>Bar - <span class="color">Brasserie</span> - Pizzeria</h1>
+      <p>Au bord de la Garonne venez découvrir Le Re et sa terrasse ensoleillée.</br>Venez profiter de 
+        sa cuisine faites maison, chaque jour, avec des produits locaux et de saison.
+      </p>
+    </section>
+
+    <section id="menus" class="menus">
+      <div class="card">
+        <img class="card-img-top" src="./images/petit_dej.png"
+            alt="Breakfast served on the terrace" >
+        <div class="card-body">
+          <h2 class="card-title color">Formule Petit-Déjeuner</h2>
+          <p class="card-text color">du mercredi au dimanche</br>
+            de 9h à 11h</p>
+          <p class="card-text color">Oeufs et bacon + orange pressée + café ou thé</p>
+        </div>         
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="./images/charcuterie.jpg"
+          alt="Plate full of food">
+        <div class="card-body">
+          <h2 class="card-title color">Formule Déjeuner</h2>
+          <p class="card-text">du lundi au vendredi</p>
+          <p class="card-text">Plat 15€</br>
+            Entrée + plat ou plat + dessert 17,90€</br>
+            Entrée + plat + dessert 19,90€</p>
         </div>
-        <div class="col-lg-6 welcome-picture">
-          <img class="picture" src="./images/bar_Alex.png" alt="Le Re - bar picture">
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="./images/pizzeria.png"
+          alt="Breakfast served on the terrace">
+        <div class="card-body">
+          <h2 class="card-title color">Formule Pizza</h2>
+          <p class="card-text">Servies de midi à la fermeture</p>
+          <p class="card-text">Pizzas faites main ...</p>
         </div>
-        <div class="col-lg-3 welcome-picture">
-          <img class="picture" src="./images/exterieur_pont.png" alt="Le Re - bridge picture">
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="./images/charcuterie.jpg"
+          alt="Charcuterie platter">
+        <div class="card-body">
+          <h2 class="card-title color">Planches en grignotage</h2>
+          <p class="card-text">Servies les après-midi</p>
+          <p class="card-text">Sélection de charcuteries ...</p>
         </div>
       </div>
     </section>
-    <section class="container">
-      <div class="row">
-        <div>
-          <h1>LE RE - Brasserie - Bar - Pizzeria</h1>
-          <p>Venez RE-découvrir LE RE, RE-venez apprécier le cadre, au bord de la Garonne, à deux pas du pont Chaban-Delmas, RE-régaler vous 
-            avec notre carte qui présente chaque jour un menu différent, cuisinés avec des produits frais de qualité.</p>
-            <p>Notre volonté, vous faire RE-partager des moments de convivialité, RE- notre équipe dynamique et souriante</p>
-        </div>
+    
+    <aside class="icons container">
+      <div class="icon">
+        <img class="icon-item" src="./images/beer_icon.png" alt="Beer icon">
       </div>
-    </section>
-
-    <aside class="container-fluid">
-      <div class="row icons">
-        <div class="offset-lg-1 col-lg-2 icons-part">
-          <img src="./images/beer_icon.png" alt="Le Re - beer icon">
-          <p class="icon-text">BIÈRES PRESSION</p>
-        </div>
-        <div class="col-lg-2 icons-part">
-          <img src="./images/wine_icon.png" alt="Le Re - wine icon">
-          <p class="icon-text">VINS</p>
-        </div>
-        <div class="col-lg-2 icons-part">
-          <img src="./images/pizza_icon.png" alt="Le Re - pizza icon">
-          <p class="icon-text">PIZZAS</p>
-        </div>
-        <div class="col-lg-3 icons-part">
-          <img src="./images/brasserie_icon.png" alt="Le Re - brasserie icon">
-          <p class="icon-text">BRASSERIE</p>
-        </div>
+      <div class="icon">
+        <img class="icon-item" src="./images/wine_icon.png" alt="Wine icon">
+      </div>
+      <div class="icon">
+        <img class="icon-item" src="./images/pizza_icon.png" alt="Pizza icon">
+      </div>
+      <div class="icon">
+        <img class="icon-item" src="./images/brasserie_icon.png" alt="Food icon">
       </div>
     </aside>
-      <section id="activity" class="container food">
-        <div class="row title-section">
-          <h1 class="">LE RE - Brasserie-Bar-Pizzeria</h1>
-          <p>Situé sur la Garonne, au pied du pont Chaban Delmas, LE RE vous propose chaque jour un menu différent,
-          cuisinés avec des produits frais.</p>
-        </div>
-        <div class="row section-layout">
-          <div class="col-lg-6 food-description">
-            <h2>LE RE - Formule Petit-Déjeuner</h2>
-            <h3>du mercredi au dimanche</br>
-              de 9h à 11h</h3>
-              <p>Oeufs et bacon + orange pressée + café ou thé</p>             
-          </div>
-          <div class="col-lg-6">
-            <img src="./images/petit_dej.jpg" alt="Le Re formule petit-déjeuner" class="food-picture">
-          </div>
-        </div>
 
-        <div class="row section-layout">
-          <div class="col-lg-6 picture">
-            <img src="./images/charcuterie.jpg" alt="Le Re plat du jour" class="food-picture">
-          </div>
-          <div class="col-lg-6 food-description">
-            <h2>LE RE - Formule Déjeuner</h2>
-            <h3>du lundi au vendredi</h3>
-            <p>Plat 15€</br>
-              Entrée + plat ou plat + dessert 17,90€</br>
-              Entrée + plat + dessert 19,90€</p>
-          </div>
-        </div>
-
-        <div class="row section-layout">
-          <div class="col-lg-6 food-description">
-            <h2>LE RE - Pizza</h2>
-            <h3>Servies de midi à la fermeture</h3>
-          </div>
-          <div class="col-lg-6 picture">
-            <img src="" alt="Le Re pizza" class="food-picture">
-          </div>
-        </div>
-
-        <div class="row section-layout">
-          <div class="col-lg-6 picture">
-            <img src="./images/charcuterie.jpg" alt="Le Re planche de grignotage" class="food-picture">
-          </div>
-          <div class="col-lg-6 food-description">
-            <h2>LE RE - Planches en grignotage</h2>
-            <h3>Servies les après-midi</h3>
-          </div>
-        </div>
-      </section>
-      <!--End presentation section--> 
-
-      <!--Team section-->
-      <section id="team" class="container">
-        <div class="row"><h2 class="title-section">Découvrez l'équipe</h2></div>
-        <div class="row section-layout">
-          <div class="col-lg-3 team-picture"><img src="./images/Alex.png" alt="Le Re le directeur"></div>
-          <div class="offset-lg-1 col-lg-8 team-details">
-            <h3>Alex, le Directeur</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna
-              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis
-              aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-              occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-        </div>
-        <div class="row section-layout">
-          <div class="offset-lg-1 col-lg-8 team-details">
-            <h3>Alex, le Directeur</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna
-              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis
-              aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-              occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <div class="col-lg-3 team-picture"><img src="" alt="Le Re le chef"></div>
-        </div>
-        <div class="row section-layout">
-          <div class="offset-lg-6 col-lg-3 team-picture"></div>
-          <h3 class="col-lg-3">Franck, le Chef</h3>
-          <div class="row team-details">
-            <p class="offset-lg-6 col-lg-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna
-              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat.
-              Duis
-              aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-              occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-      </div>
-      </section>
-      <!--End team section-->
-
-      <footer id="contact">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4">
-              <h4 class="footer-title">Adresse</h4>
-              <p>Hangar 18 - Quai de Bacalan</br>
-                33300 Bordeaux</br> 
-                Accès Tram ligne B arrêt Les Hangars</p>
-            </div>
-            <div class="col-lg-4">
-              <h4 class="footer-title">Contact</h4>
-              <p>tél: 09 83 24 50 30</br>
-                <a href="">lere@mail.fr</a></br>
-                Retrouvez-nous sur 
-                <a href="https://www.facebook.com/LERE84" target="_blank"><img src="./images/facebook_icon.png" alt="Le Re Facebook link"></a></p> 
-            </div>
-            <div class="col-lg-4">
-              <h4 class="footer-title">Horaires</h4>
-              <p>Tous les jours : 9h-18h
-              </p>
-            </div>
-            </div>
-
-            <div class="row">
-              <div class="official-text">
-                <p>LE RE. Tous droits réservés. Mentions Légales. </p>
-              </div>
-            </div>
-          </div>
+    <div class="row gallery">
+      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+        <img src="./images/exterieur_pont.png" class="w-100 rounded mb-4"
+          alt="View on the bridge" />
         
-      </footer>
+    
+        <img src="./images/bar.jpg" class="w-100 rounded mb-4"
+          alt="Restaurant bar" />
+      </div>
+    
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <img src="./images/salle_bar.png" class="w-100 rounded mb-4"
+          alt="Restaurant room" />
+        
+        <img
+          src="./images/petit_dej.png"
+          class="w-100 rounded mb-4" alt="Breakfast on terrace" />
+      </div>
+    
+      <div class="col-lg-4 mb-4 mb-lg-0">    
+        <img src="./images/corks.jpg"
+          class="w-100 rounded mb-4" alt="Wine corks" />
+
+          <img src="./images/arc_en_ciel.jpg" class="w-100 rounded mb-4"
+            alt="View on the bridge with a rainbow" />
+      </div>
     </div>
+
+    <section id="team">
+      <div class="team">
+        <div class="card card-team">
+          <img class="card-img-top" src="./images/Alex.png" alt="Director of Le Re"
+            height="300">
+          <div class="card-body">
+            <h2 class="card-title">Alex, le Directeur</h2>
+            <p class="card-text color">Lorem ipsum dolor sit amet, consectetur
+              adipiscing
+              elit, sed do eiusmod
+              tempor
+              incididunt ut labore et dolore
+              magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi
+              ut aliquip ex ea commodo
+              consequat.</p>
+          </div>
+        </div>
+        <div class="card card-team">
+          <img class="card-img-top" src="./images/chef_Franck.png" alt="Chef of Le Re"
+            height="300">
+          <div class="card-body">
+            <h2 class="card-title color">Franck, le Chef</h2>
+            <p class="card-text color">Lorem ipsum dolor sit amet, consectetur
+              adipiscing
+              elit, sed do eiusmod
+              tempor
+              incididunt ut labore et dolore
+              magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi
+              ut aliquip ex ea commodo
+              consequat.</p>
+          </div>
+        </div>
+      </div>
+      
+    </section>  
+
+    <footer id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <h4 class="footer-title">Adresse</h4>
+            <p>Hangar 18 - Quai de Bacalan</br>
+              33300 Bordeaux</br>
+              Accès Tram ligne B arrêt Les Hangars</p>
+          </div>
+          <div class="col-lg-4">
+            <h4 class="footer-title">Contact</h4>
+            <p>tél: 09 83 24 50 30</br>
+              <a href="">lere@mail.fr</a></br>
+              Retrouvez-nous sur
+              <a href="https://www.facebook.com/LERE84" target="_blank"><img
+                  src="./images/facebook_icon.png" alt="Le Re Facebook link"></a>
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <h4 class="footer-title">Horaires</h4>
+            <p>Tous les jours : 9h-18h
+            </p>
+          </div>
+        </div>
+    
+        <div class="row">
+          <div class="official-text">
+            <p>LE RE. Tous droits réservés. Mentions Légales. </p>
+          </div>
+        </div>
+      </div>
+    
+    </footer>
+
+  </div>
+  
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="./index.js"></script>
+  <script src="./index.js"></script>
 </body>
 </html>
