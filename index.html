@@ -14,87 +14,102 @@
 
 <body>
   <div class="full-part">
-    <nav class="navbar navbar-expand">
-      <a class="navbar-brand" href="index.html">
-        <img class="logo-item" src="./images/logo.png" alt="Restaurant Logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse"
-        data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav items">
-          <li class="nav-item active">
-            <a class="nav-link" href="#menus">Nos Menus<span
-                class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#team">Notre Equipe</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Notre contact</a>
-          </li>
-        </ul>
+
+    <div class="nav-wrapper">
+      <div id="navigation" class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <nav id="navbarSupportedContent"
+              class="col navbar navbar-inverse navbar-expand-lg navbar-light">
+              <a class="navbar-brand" href="index.html">
+                <img class="logo-item" src="./images/logo.png" alt="Restaurant Logo">
+              </a>
+              <button class="navbar-toggler collapsed pull-right" type="button"
+                data-toggle="collapse" data-target="#navbarContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div id="navbarContent"
+                class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#menus">Nos Menus</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#team">Notre &Eacute;quipe</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Notre contact</a>
+                  </li>    
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
       </div>
-    </nav>
-
-
+    </div>
     
-
     <div class="row">
-      <div class="outside-image">
+      <div class="main-image">
         <img src="./images/exterieur_nord.png" alt="Restaurant terrace">
       </div>
     </div>
      
-
     <section class="presentation">
       <img src="./images/logo.png" width="160" height="160" alt="Site Logo">
-      <h1>Bar - <span class="color">Brasserie</span> - Pizzeria</h1>
-      <p>Au bord de la Garonne venez découvrir Le Re et sa terrasse ensoleillée.</br>Venez profiter de 
-        sa cuisine faites maison, chaque jour, avec des produits locaux et de saison.
+      <h1 class="presentation-title">Bar - <span class="color">Brasserie</span> - Pizzeria</h1>
+      <p class="presentation-content">Lorem ipsum dolor sit amet, consectetur
+              adipiscing
+              elit, sed do eiusmod
+              tempor
+              incididunt ut labore et dolore
+              magna
+              aliqua.
       </p>
     </section>
 
-    <section id="menus" class="menus">
-      <div class="card">
-        <img class="card-img-top" src="./images/petit_dej.png"
-            alt="Breakfast served on the terrace" >
-        <div class="card-body">
-          <h2 class="card-title color">Formule Petit-Déjeuner</h2>
-          <p class="card-text color">du mercredi au dimanche</br>
-            de 9h à 11h</p>
-          <p class="card-text color">Oeufs et bacon + orange pressée + café ou thé</p>
-        </div>         
-      </div>
-      <div class="card">
-        <img class="card-img-top" src="./images/charcuterie.jpg"
-          alt="Plate full of food">
-        <div class="card-body">
-          <h2 class="card-title color">Formule Déjeuner</h2>
-          <p class="card-text">du lundi au vendredi</p>
-          <p class="card-text">Plat 15€</br>
-            Entrée + plat ou plat + dessert 17,90€</br>
-            Entrée + plat + dessert 19,90€</p>
+    <section id="menus">
+      <div class="menus">
+        <div class="menu-card">
+          <img class="menu-image" src="./images/petit_dej.png"
+            alt="Breakfast served on the terrace">
+          <div class="menu-text">
+            <h2 class="menu-title color">Formule Petit-Déjeuner</h2>
+            <p class="color">du mercredi au dimanche</br>
+              de 9h à 11h</p>
+            <p class="color">Oeufs et bacon + orange pressée + café ou thé
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src="./images/pizzeria.png"
-          alt="Breakfast served on the terrace">
-        <div class="card-body">
-          <h2 class="card-title color">Formule Pizza</h2>
-          <p class="card-text">Servies de midi à la fermeture</p>
-          <p class="card-text">Pizzas faites main ...</p>
+        <div class="menu-card">
+          <img class="menu-image" src="./images/charcuterie.jpg"
+            alt="Plate full of food">
+          <div class="menu-text">
+            <h2 class="menu-title color">Formule Déjeuner</h2>
+            <p>du lundi au vendredi</p>
+            <p>Plat 15€</br>
+              Entrée + plat ou plat + dessert 17,90€</br>
+              Entrée + plat + dessert 19,90€</p>
+          </div>
         </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src="./images/charcuterie.jpg"
-          alt="Charcuterie platter">
-        <div class="card-body">
-          <h2 class="card-title color">Planches en grignotage</h2>
-          <p class="card-text">Servies les après-midi</p>
-          <p class="card-text">Sélection de charcuteries ...</p>
+        <div class="menu-card">
+          <img class="menu-image" src="./images/pizzeria.png"
+            alt="Breakfast served on the terrace">
+          <div class="menu-text">
+            <h2 class="menu-title color">Formule Pizza</h2>
+            <p>Servies de midi à la fermeture</p>
+            <p>Pizzas faites main ...</p>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img class="menu-image" src="./images/charcuterie.jpg"
+            alt="Charcuterie platter">
+          <div class="menu-text">
+            <h2 class="menu-title color">Planches en grignotage</h2>
+            <p>Servies les après-midi</p>
+            <p>Sélection de charcuteries ...</p>
+          </div>
         </div>
       </div>
     </section>
@@ -118,25 +133,19 @@
       <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
         <img src="./images/exterieur_pont.png" class="w-100 rounded mb-4"
           alt="View on the bridge" />
-        
-    
         <img src="./images/bar.jpg" class="w-100 rounded mb-4"
           alt="Restaurant bar" />
-      </div>
-    
+      </div> 
       <div class="col-lg-4 mb-4 mb-lg-0">
         <img src="./images/salle_bar.png" class="w-100 rounded mb-4"
-          alt="Restaurant room" />
-        
+          alt="Restaurant room" />       
         <img
           src="./images/petit_dej.png"
           class="w-100 rounded mb-4" alt="Breakfast on terrace" />
-      </div>
-    
+      </div>    
       <div class="col-lg-4 mb-4 mb-lg-0">    
         <img src="./images/corks.jpg"
           class="w-100 rounded mb-4" alt="Wine corks" />
-
           <img src="./images/arc_en_ciel.jpg" class="w-100 rounded mb-4"
             alt="View on the bridge with a rainbow" />
       </div>
@@ -144,12 +153,11 @@
 
     <section id="team">
       <div class="team">
-        <div class="card card-team">
-          <img class="card-img-top" src="./images/Alex.png" alt="Director of Le Re"
-            height="300">
-          <div class="card-body">
-            <h2 class="card-title">Alex, le Directeur</h2>
-            <p class="card-text color">Lorem ipsum dolor sit amet, consectetur
+        <div class="team-card">
+          <img class="team-image" src="./images/Alex.png" alt="Director of Le Re">
+          <div class="team-text">
+            <h2 class="team-title color">Alex, le Directeur</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur
               adipiscing
               elit, sed do eiusmod
               tempor
@@ -161,12 +169,11 @@
               consequat.</p>
           </div>
         </div>
-        <div class="card card-team">
-          <img class="card-img-top" src="./images/chef_Franck.png" alt="Chef of Le Re"
-            height="300">
-          <div class="card-body">
-            <h2 class="card-title color">Franck, le Chef</h2>
-            <p class="card-text color">Lorem ipsum dolor sit amet, consectetur
+        <div class="team-card">
+          <img class="team-image" src="./images/chef_Franck.png" alt="Chef of Le Re">
+          <div class="team-text">
+            <h2 class="team-title color">Franck, le Chef</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur
               adipiscing
               elit, sed do eiusmod
               tempor
@@ -179,45 +186,40 @@
           </div>
         </div>
       </div>
-      
     </section>  
 
-    <footer id="contact">
+    <footer class="container-fluid" id="contact">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <h4 class="footer-title">Adresse</h4>
-            <p>Hangar 18 - Quai de Bacalan</br>
-              33300 Bordeaux</br>
+        <div class="row contact">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="contact-content">
+              <img class="contact-icon" src="images/localisation.png" alt="">
+              <p class="mb-0 cursor">Hangar 18 - Quai de Bacalan</br>
+              33300 Bordeaux </br>
               Accès Tram ligne B arrêt Les Hangars</p>
+            </div>
+            
           </div>
-          <div class="col-lg-4">
-            <h4 class="footer-title">Contact</h4>
-            <p>tél: 09 83 24 50 30</br>
-              <a href="">lere@mail.fr</a></br>
-              Retrouvez-nous sur
-              <a href="https://www.facebook.com/LERE84" target="_blank"><img
-                  src="./images/facebook_icon.png" alt="Le Re Facebook link"></a>
-            </p>
-          </div>
-          <div class="col-lg-4">
-            <h4 class="footer-title">Horaires</h4>
-            <p>Tous les jours : 9h-18h
-            </p>
-          </div>
-        </div>
-    
-        <div class="row">
-          <div class="official-text">
-            <p>LE RE. Tous droits réservés. Mentions Légales. </p>
-          </div>
-        </div>
-      </div>
-    
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="contact-content">
+              <img class="contact-icon" src="images/phone.png" alt="">
+              <p class="mb-0 cursor">09 83 24 50 30</p>
+              <a class="text-decoration-none mailto" href="">
+                <img class="contact-icon" src="images/email.png" alt="">
+                <p class="mb-0">lere@mail.fr</p>
+                <a href="https://www.facebook.com/LERE84" target="_blank"><img
+                    src="./images/facebook_icon.png" alt="Le Re Facebook link"></a>
+              </a>
+            </div>
+          </div>           
+        </div>    
+      </div>   
     </footer>
 
   </div>
-  
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="./index.js"></script>

@@ -16,130 +16,209 @@ body, html {
   background-color: #b12830;
 }
 
-/***Header***/
-nav {
-  height: 7.8rem;
+/*****Header******/
+#navigation {
+  z-index: 99;
   background-color: #fff2e6;
-  display: flex;
-  justify-content: center;
-  justify-content: space-evenly;
-  align-items: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-  z-index: 10;
+  position: fixed;
 }
 .logo-item {
   width: 120px;
   height: 120px;
 }
+li { 
+  text-align: center;
+}
 .nav-link {
+  margin-right: 2.8rem;
   font-size: 1.6em;
-  color: black;
+  color:  black !important;
+}
+.nav-link:hover {
+  color: #b12830 !important;
 }
 
-.outside-image {
+@media screen and (max-width: 992px) {
+  .navbar {
+    height: auto;
+  }
+  .logo-item {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+
+/***Main image****/
+.main-image {
   width: 100%;
-  height: 48rem;
+  height: 55rem;
   z-index: 0;
   overflow: hidden;
 }
-.outside-image img {
+.main-image img {
   width: 110%;
   height: 100%;
   object-fit: cover;
-  transform: rotateZ(-5deg) translateY(-4rem) translateX(-4rem);
+  transform: rotateZ(-5deg) translateY(-6rem) translateX(-4rem);
 }
-.inside-image {
-  width: 50%;
-  z-index: 0;
-  overflow: hidden;
-  margin-bottom: 5rem;
-}
-.inside-image img {
-  width: 80%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 14px;
-  
+@media screen and (max-width: 740px) {
+  .main-image img {
+    transform: rotateZ(-5deg) translateY(-6rem) translateX(-2rem);
+  }
 }
 
+/****Presentation****/
 .presentation {
   text-align: center;
   max-width: 45rem;
-  width: 90%;
+  width: 70%;
   margin: auto;
-  margin-top: -15rem;
+  margin-top: -22rem;
   position: relative;
   background-color: #fff2e6;
-  border-radius: 14px;
+  border-radius: 10px;
   padding: 1rem;
   box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.25);
 }
-.presentation h2 {
-  font-size: 2rem;
+.presentation-title {
+  font-size: 2.5rem;
   margin-top: 0;
 }
-.presentation p {
+.presentation-content {
   font-size: 1.2em;
 }
 .color {
   color: #b12830;
 }
 
-.menus {
+@media screen and (max-width: 770px) {
+  .presentation {
+    width: 60%;
+  }
+  .presentation-title {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 560px) {
+  .presentation-title {
+    font-size: 1.4em;
+  }
+  .presentation-content {
+    font-size: 1em;
+  }
+}
+
+/******Menus********/
+.menus { 
+  margin-top: 60px;
+  margin-bottom: 20px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.card {
-  width: auto;
-  margin-top: 180px;
-  background-color: #fff2e6 !important;
-  border-radius: 14px !important;
-}
-.card-img-top {
-  width: 20rem !important;
-  object-fit: cover;
-  margin: 20px 20px;
-  border-radius: 14px !important;
+.menu-card {
+  height: 30rem;
+  margin: 30px 20px;
+  background-color: #fff2e6;
+  border-radius: 10px;
   box-shadow: 0 1px 10px 5px rgba(0, 0, 0, 0.25);
 }
-.card-body {
+.menu-image {
+  width: 20rem;
+  object-fit: cover;
+  margin: 20px 20px;
+  border-radius: 14px;
+  box-shadow: 0 1px 10px 5px rgba(0, 0, 0, 0.25);
+}
+.menu-text {
   text-align: center;
-  
-  width: 25rem;
+}
+@media screen and (max-width: 1500px) {
+  .menu-card {
+    margin: 20px 10px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .menu-image {
+    width: 16rem;
+  }
 }
 
-
-.team {
-  display: flex;
-  justify-content: space-evenly;
-}
-.card-team {
-  margin-top: 0 !important;
-  width: 45rem !important;
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: center !important;
-}
-.card-team img {
-  width: 15rem !important;
-}
+/****Icons*****/
 .icons {
   margin: 50px 0;
-  height: 15rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
 }
 .icon {
-  width: 170px;
-  height: 170px;
-  border: 5px solid #fff2e6;
+  width: 150px;
+  height: 150px;
+  border: 4px solid #fff2e6;
   border-radius: 50%;
 }
 .icon-item {
+  width: 80px;
   margin-top: 1.7rem;
   margin-left: 2rem;
 }
+@media screen and (max-width: 1120px) {
+  .icon {
+    width: 140px;
+    height: 140px;
+  }
+  .icon-item {
+    width: 70px;
+    margin-top: 1.7rem;
+    margin-left: 2rem;
+  }
+}
+@media screen and (max-width: 780px) {
+  .icon {
+    width: 100px;
+    height: 100px;
+    margin: 10px 20px;
+  }
+  .icon-item {
+    width: 50px;
+    margin-top: 1.4rem;
+    margin-left: 1.4rem;
+    
+  }
+}
+
+/*****Team*****/
+.team { 
+  margin-top: 60px;
+  margin-bottom: 20px;
+  display: flex;
+}
+.team-card {
+  height: 22rem;
+  margin: 30px 20px;
+  display: flex;
+  align-items: center;
+  background-color: #fff2e6;
+  border-radius: 10px;
+  box-shadow: 0 1px 10px 5px rgba(0, 0, 0, 0.25);
+}
+.team-image {
+  width: 15rem;
+  height: 20rem;
+  object-fit: cover;
+  margin: 20px 20px;
+  border-radius: 14px;
+  box-shadow: 0 1px 10px 5px rgba(0, 0, 0, 0.25);
+}
+.team-text {
+  width: 50%;
+  text-align: center;
+}
+
+
 
 .gallery {
   width: 110rem;
@@ -147,32 +226,10 @@ nav {
 }
 .gallery img {
   border: 25px solid #fff2e6;
-  border-radius: 14px;
+  border-radius: 10px !important;
 }
 
 
 
 
 
-
-
-.main-picture {
-  height: 100%;
-  background: url('../images/exterieur_nord.png') no-repeat;
-  background-position: center;
-  background-size: auto;
-  opacity: 0.9;
-}
-
-/**********/
-.main-part {
-  height: 750px;
-}
-.main-title {
-  margin: 40px 180px;
-
-}
-.text-content {
-  height: auto;
-  background-color: aqua;
-}
