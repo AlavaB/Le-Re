@@ -12,6 +12,8 @@ body, html {
   overflow-x: hidden;
 }
 .full-part {
+  margin: 0px 0px;
+  padding: 0px 0px;
   font-family: 'alegreyaregular', Arial, Helvetica, sans-serif;
   background-color: #b12830;
 }
@@ -113,7 +115,7 @@ li {
 /******Menus********/
 .menus { 
   margin-top: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -128,11 +130,12 @@ li {
 .menu-image {
   width: 20rem;
   object-fit: cover;
-  margin: 20px 20px;
+  margin: 30px 30px;
   border-radius: 14px;
   box-shadow: 0 1px 10px 5px rgba(0, 0, 0, 0.25);
 }
 .menu-text {
+  width: 25rem;
   text-align: center;
 }
 @media screen and (max-width: 1500px) {
@@ -190,16 +193,43 @@ li {
   }
 }
 
+/*******Gallery********/
+.gallery {
+  margin: 50px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.gallery-box {
+  display: flex;
+  flex-direction: column;
+}
+.gallery-item {
+  margin: 10px 0px;
+  background-color: #fff2e6;
+  border-radius: 10px;
+}
+.gallery-image {
+  margin: 20px 20px;
+  box-shadow: 0 1px 10px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+
 /*****Team*****/
 .team { 
   margin-top: 60px;
   margin-bottom: 20px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .team-card {
   height: 22rem;
   margin: 30px 20px;
   display: flex;
+  justify-content: space-around;
   align-items: center;
   background-color: #fff2e6;
   border-radius: 10px;
@@ -214,22 +244,32 @@ li {
   box-shadow: 0 1px 10px 5px rgba(0, 0, 0, 0.25);
 }
 .team-text {
-  width: 50%;
+  width: 30rem;
   text-align: center;
 }
 
+/*****Footer*****/
 
-
-.gallery {
-  width: 110rem;
-  align-items: center;  
+.contact {
+  height: 11rem;
+  background-color: #fff2e6;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
-.gallery img {
-  border: 25px solid #fff2e6;
-  border-radius: 10px !important;
+.contact-left {
+  text-align: end;
 }
-
-
+.contact-center {
+  margin: 0px 30px;
+  padding: 0 10px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+.legal-content {
+  text-align: center;
+  font-size: 0.8em;
+}
 
 
 

@@ -17,10 +17,9 @@
 
     <div class="nav-wrapper">
       <div id="navigation" class="container-fluid">
-        <div class="container">
           <div class="row">
             <nav id="navbarSupportedContent"
-              class="col navbar navbar-inverse navbar-expand-lg navbar-light">
+              class="col navbar navbar-inverse navbar-expand-md">
               <a class="navbar-brand" href="index.html">
                 <img class="logo-item" src="./images/logo.png" alt="Restaurant Logo">
               </a>
@@ -46,14 +45,11 @@
               </div>
             </nav>
           </div>
-        </div>
       </div>
     </div>
     
-    <div class="row">
-      <div class="main-image">
-        <img src="./images/exterieur_nord.png" alt="Restaurant terrace">
-      </div>
+    <div class="main-image">
+      <img src="./images/exterieur_nord.png" alt="Restaurant terrace">
     </div>
      
     <section class="presentation">
@@ -129,27 +125,31 @@
       </div>
     </aside>
 
-    <div class="row gallery">
-      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-        <img src="./images/exterieur_pont.png" class="w-100 rounded mb-4"
-          alt="View on the bridge" />
-        <img src="./images/bar.jpg" class="w-100 rounded mb-4"
-          alt="Restaurant bar" />
-      </div> 
-      <div class="col-lg-4 mb-4 mb-lg-0">
-        <img src="./images/salle_bar.png" class="w-100 rounded mb-4"
-          alt="Restaurant room" />       
-        <img
-          src="./images/petit_dej.png"
-          class="w-100 rounded mb-4" alt="Breakfast on terrace" />
-      </div>    
-      <div class="col-lg-4 mb-4 mb-lg-0">    
-        <img src="./images/corks.jpg"
-          class="w-100 rounded mb-4" alt="Wine corks" />
-          <img src="./images/arc_en_ciel.jpg" class="w-100 rounded mb-4"
-            alt="View on the bridge with a rainbow" />
+    <section id="gallery">
+      <div class="gallery">
+        <div class="gallery-box">
+          <div class="gallery-item"><img src="./images/exterieur_pont.png"
+            class="gallery-image" width="450" alt="View on the bridge" /></div>
+          
+          <div class="gallery-item"><img src="./images/bar.jpg" class="gallery-image" width="450"
+            alt="Restaurant bar" /></div>
+        </div>
+        <div class="gallery-box">
+          <div class="gallery-item"><img class="gallery-image" src="./images/salle_bar.png"
+            class="w-100 rounded mb-4" width="450" alt="Restaurant room" /></div>
+          <div class="gallery-item"><img src="./images/petit_dej.png" class="gallery-image" width="450"
+            alt="Breakfast on terrace" /></div>
+        </div>
+        <div class="gallery-box">
+          <div class="gallery-item"><img src="./images/corks.jpg" class="gallery-image" width="450" alt="Wine corks" /></div>
+          <div class="gallery-item"><img src="./images/arc_en_ciel.jpg" class="gallery-image" width="450"
+            alt="View on the bridge with a rainbow" /></div>
+        </div>
       </div>
-    </div>
+    </section>
+
+
+    
 
     <section id="team">
       <div class="team">
@@ -189,31 +189,25 @@
     </section>  
 
     <footer class="container-fluid" id="contact">
-      <div class="container">
-        <div class="row contact">
-          <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-            <div class="contact-content">
-              <img class="contact-icon" src="images/localisation.png" alt="">
-              <p class="mb-0 cursor">Hangar 18 - Quai de Bacalan</br>
-              33300 Bordeaux </br>
-              Accès Tram ligne B arrêt Les Hangars</p>
-            </div>
-            
-          </div>
-          <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-            <div class="contact-content">
-              <img class="contact-icon" src="images/phone.png" alt="">
-              <p class="mb-0 cursor">09 83 24 50 30</p>
-              <a class="text-decoration-none mailto" href="">
-                <img class="contact-icon" src="images/email.png" alt="">
-                <p class="mb-0">lere@mail.fr</p>
-                <a href="https://www.facebook.com/LERE84" target="_blank"><img
-                    src="./images/facebook_icon.png" alt="Le Re Facebook link"></a>
-              </a>
-            </div>
-          </div>           
-        </div>    
-      </div>   
+      <div class="row contact">
+        <div class="contact-left">
+          <p>Hangar 18 - Quai de Bacalan</br>
+          33300 Bordeaux</br>
+          Accès Tram ligne B</br>
+          arrêt Les Hangars</p>
+        </div>
+        <div class="contact-center">
+          <img src="./images/logo.png" width="120" height="120" alt="Site Logo">
+          <p class="legal-content">Tous droits réservés.</p>
+        </div>
+        <div class="contact-right">
+          <p>Tél: 09 83 24 50 30</br>
+            Email: lere@mail.fr</br>
+            <a href="https://www.facebook.com/LERE84" target="_blank"><img
+              src="./images/facebook_icon.png" alt="Le Re Facebook link"></a>
+          </p>
+        </div>          
+      </div>
     </footer>
 
   </div>
