@@ -17,34 +17,34 @@
 
     <div class="nav-wrapper">
       <div id="navigation" class="container-fluid">
-          <div class="row">
-            <nav id="navbarSupportedContent"
-              class="col navbar navbar-inverse navbar-expand-md">
-              <a class="navbar-brand" href="index.html">
-                <img class="logo-item" src="./images/logo.png" alt="Restaurant Logo">
-              </a>
-              <button class="navbar-toggler collapsed pull-right" type="button"
-                data-toggle="collapse" data-target="#navbarContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div id="navbarContent"
-                class="collapse navbar-collapse justify-content-end">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#menus">Nos Menus</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#team">Notre &Eacute;quipe</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contact">Notre contact</a>
-                  </li>    
-                </ul>
-              </div>
-            </nav>
-          </div>
+        <div class="row">
+          <nav id="navbarSupportedContent"
+            class="col navbar navbar-inverse navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html">
+              <img class="logo-item" src="./images/logo.png" alt="Restaurant Logo">
+            </a>
+            <button class="navbar-toggler collapsed pull-right" type="button"
+              data-toggle="collapse" data-target="#navbarContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarContent"
+              class="collapse navbar-collapse justify-content-end">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#menus">Nos Menus</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#team">Notre &Eacute;quipe</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Notre contact</a>
+                </li>    
+              </ul>
+            </div>
+          </nav>
+        </div>
       </div>
     </div>
     
@@ -65,7 +65,7 @@
       </p>
     </section>
 
-    <section id="menus">
+    <section id="menus" class="anchor">
       <div class="menus">
         <div class="menu-card">
           <img class="menu-image" src="./images/petit_dej.png"
@@ -125,6 +125,44 @@
       </div>
     </aside>
 
+    <section id="team" class="anchor">
+      <div class="team">
+        <div class="team-card">
+          <img class="team-image" src="./images/Alex.png" alt="Director of Le Re">
+          <div class="team-text">
+            <h2 class="team-title color">Alex, le Directeur</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur
+              adipiscing
+              elit, sed do eiusmod
+              tempor
+              incididunt ut labore et dolore
+              magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi
+              ut aliquip ex ea commodo
+              consequat.</p>
+          </div>
+        </div>
+        <div class="team-card">
+          <img class="team-image" src="./images/chef_Franck.png"
+            alt="Chef of Le Re">
+          <div class="team-text">
+            <h2 class="team-title color">Franck, le Chef</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur
+              adipiscing
+              elit, sed do eiusmod
+              tempor
+              incididunt ut labore et dolore
+              magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi
+              ut aliquip ex ea commodo
+              consequat.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
     <section id="gallery">
       <div class="gallery">
         <div class="gallery-box">
@@ -151,56 +189,21 @@
 
     
 
-    <section id="team">
-      <div class="team">
-        <div class="team-card">
-          <img class="team-image" src="./images/Alex.png" alt="Director of Le Re">
-          <div class="team-text">
-            <h2 class="team-title color">Alex, le Directeur</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur
-              adipiscing
-              elit, sed do eiusmod
-              tempor
-              incididunt ut labore et dolore
-              magna
-              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi
-              ut aliquip ex ea commodo
-              consequat.</p>
-          </div>
-        </div>
-        <div class="team-card">
-          <img class="team-image" src="./images/chef_Franck.png" alt="Chef of Le Re">
-          <div class="team-text">
-            <h2 class="team-title color">Franck, le Chef</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur
-              adipiscing
-              elit, sed do eiusmod
-              tempor
-              incididunt ut labore et dolore
-              magna
-              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi
-              ut aliquip ex ea commodo
-              consequat.</p>
-          </div>
-        </div>
-      </div>
-    </section>  
+      
 
-    <footer class="container-fluid" id="contact">
+    <footer class="container-fluid anchor" id="contact">
       <div class="row contact">
-        <div class="contact-left">
+        <div class="contact-content left-content">
           <p>Hangar 18 - Quai de Bacalan</br>
           33300 Bordeaux</br>
           Accès Tram ligne B</br>
-          arrêt Les Hangars</p>
+          Arrêt Les Hangars</p>
         </div>
-        <div class="contact-center">
+        <div class="contact-content center-content">
           <img src="./images/logo.png" width="120" height="120" alt="Site Logo">
           <p class="legal-content">Tous droits réservés.</p>
         </div>
-        <div class="contact-right">
+        <div class="contact-content right-content">
           <p>Tél: 09 83 24 50 30</br>
             Email: lere@mail.fr</br>
             <a href="https://www.facebook.com/LERE84" target="_blank"><img

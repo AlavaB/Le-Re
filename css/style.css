@@ -9,7 +9,6 @@
 body, html {
   margin: 0;
   height: 100%;
-  overflow-x: hidden;
 }
 .full-part {
   margin: 0px 0px;
@@ -17,7 +16,10 @@ body, html {
   font-family: 'alegreyaregular', Arial, Helvetica, sans-serif;
   background-color: #b12830;
 }
-
+.anchor {
+  padding-top: 100px;
+  margin-top: -100px;
+}
 /*****Header******/
 #navigation {
   z-index: 99;
@@ -28,8 +30,10 @@ body, html {
 .logo-item {
   width: 120px;
   height: 120px;
+  margin-left: 10rem;
 }
 li { 
+  margin-right: 10px;
   text-align: center;
 }
 .nav-link {
@@ -193,6 +197,51 @@ li {
   }
 }
 
+/*****Team*****/
+.team { 
+  margin-top: 60px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.team-card {
+  height: 22rem;
+  margin: 30px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff2e6;
+  border-radius: 10px;
+  box-shadow: 0 1px 10px 5px rgba(0, 0, 0, 0.25);
+}
+.team-image {
+  width: 12rem;
+  height: 20rem;
+  object-fit: cover;
+  margin: 20px 20px;
+  border-radius: 14px;
+  box-shadow: 0 1px 10px 5px rgba(0, 0, 0, 0.25);
+}
+.team-text {
+  width: 20rem;
+  padding: 0px 10px;
+  text-align: center;
+}
+@media screen and (max-width: 1250px) {
+  .team {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 700px) {
+  .team-card {
+    height: 32rem;
+    flex-direction: column;
+  }
+  .team-text {
+    width: 25rem;
+  }
+}
+
 /*******Gallery********/
 .gallery {
   margin: 50px 0px;
@@ -215,37 +264,10 @@ li {
   box-shadow: 0 1px 10px 5px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
 }
-
-
-/*****Team*****/
-.team { 
-  margin-top: 60px;
-  margin-bottom: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.team-card {
-  height: 22rem;
-  margin: 30px 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #fff2e6;
-  border-radius: 10px;
-  box-shadow: 0 1px 10px 5px rgba(0, 0, 0, 0.25);
-}
-.team-image {
-  width: 15rem;
-  height: 20rem;
-  object-fit: cover;
-  margin: 20px 20px;
-  border-radius: 14px;
-  box-shadow: 0 1px 10px 5px rgba(0, 0, 0, 0.25);
-}
-.team-text {
-  width: 30rem;
-  text-align: center;
+@media screen and (max-width: 570px) {
+  .gallery-image {
+    width: 20rem;
+  }
 }
 
 /*****Footer*****/
@@ -254,22 +276,41 @@ li {
   height: 11rem;
   background-color: #fff2e6;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: flex-end;
 }
-.contact-left {
+.left-content {
   text-align: end;
 }
-.contact-center {
+.center-content {
   margin: 0px 30px;
   padding: 0 10px;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  border-left: 2px solid black;
+  border-right: 3px solid #b12830;
+}
+.right-content {
+  text-align: start;
 }
 .legal-content {
   text-align: center;
   font-size: 0.8em;
 }
-
+@media screen and (max-width: 650px) {
+  .contact {
+    height: 28rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-content {
+    margin: 10px 0px;
+  }
+  .left-content {
+    text-align: center;
+  }
+  .right-content {
+    text-align: center;
+  }
+}
 
 
